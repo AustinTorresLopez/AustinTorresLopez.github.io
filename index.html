@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Austin Torres Lopez</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class = "container">
+            <nav>
+                <img src="images/logo.png" alt="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Computer Science</p>
+                <h1>Hi, I'm <span>Austin</span><br>from Virginia, USA</h1>
+            </div>
+        </div>
+    </div>
+
+    <!----------about------>
+
+    <div id ="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="user">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>I am Austin from Virginia, USA. I am currently a student at
+                    George Mason University and on my free time like to work on 
+                    backend development. I enjoy learning languages and frameworks such as Spring. 
+                    I also enjoy working on unix-based machines and learning about algorithm analysis 
+                    (leetcode helps!)</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills"><ul>
+                        <li><span>Languages</span><br>Java, Python, C</li>
+                        <li><span>Frameworks</span><br>Java</li>
+                        <li><span>Developer Tools</span><br>Java</li>
+                        <li><span>Database Management</span><br>PostgreSQL</li>
+                    </ul></div>
+
+                    <div class="tab-contents" id="experience"><ul>
+                        <li><span>August 2023</span><br>NASA Extern @ AMES Research Center</li>
+
+                    </ul></div>
+                    
+                    <div class="tab-contents" id="education"><ul>
+                        <li><span>Expected May 2025</span><br>B.S. Computer Science at George Mason University</li>
+                    </ul></div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+<!--
+
+
+    <div class="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <h2></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+-->
+
+<!-- ------------portfolio--------- -->
+<div class="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <video width="320" height="240" controls>
+                    <!-- Provide the path to your video file -->
+                    <source src="images/tetris.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video width="320" height="240" controls>
+                    <!-- Provide the path to your video file -->
+                    <source src="images/cache.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+            </div>
+        </div>
+    </div>
+</div>
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+
+        for (var i = 0; i < tablinks.length; i++) {
+            tablinks[i].classList.remove("active-link");
+        }
+
+        for (var i = 0; i < tabcontents.length; i++) {
+            tabcontents[i].classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+    </script>
+
+</body>
+</html>
