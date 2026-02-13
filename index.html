@@ -1,137 +1,117 @@
 <!DOCTYPE html>
-<html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Austin Torres Lopez</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" </head>
+
 <body>
-    <div id="header">
-        <div class = "container">
-            <nav>
-                <img src="images/logo.png" alt="logo">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="header-text">
-                <p>Computer Science</p>
-                <h1>Hi, I'm <span>Austin</span><br>from Virginia, USA</h1>
-            </div>
-        </div>
-    </div>
-
-    <!----------about------>
-
-    <div id ="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="images/user.png" alt="user">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About me</h1>
-                    <p>I am Austin from Virginia, USA. I am currently a student at
-                    George Mason University and on my free time like to work on 
-                    backend development. I enjoy learning languages and frameworks such as Spring. 
-                    I also enjoy working on unix-based machines and learning about algorithm analysis 
-                    (leetcode helps!)</p>
-
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                    </div>
-
-                    <div class="tab-contents active-tab" id="skills"><ul>
-                        <li><span>Languages</span><br>Java, Python, C</li>
-                        <li><span>Frameworks</span><br>Spring</li>
-                        <li><span>Developer Tools</span><br>Git, Visual Studio Code, NetBeans</li>
-                        <li><span>Database Management</span><br>PostgreSQL</li>
-                    </ul></div>
-
-                    <div class="tab-contents" id="experience"><ul>
-                        <li><span>August 2023</span><br>NASA Extern @ AMES Research Center</li>
-
-                    </ul></div>
-                    
-                    <div class="tab-contents" id="education"><ul>
-                        <li><span>Expected May 2025</span><br>B.S. Computer Science at George Mason University</li>
-                    </ul></div>
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-<!--
-
-
-    <div class="services">
-        <div class="container">
-            <h1 class="sub-title">My Services</h1>
-            <div class="services-list">
-                <div>
-                    <h2></h2>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
--->
-
-<!-- ------------portfolio--------- -->
-<div class="portfolio">
     <div class="container">
-        <h1 class="sub-title">My Work</h1>
-        <div class="work-list">
-            <div class="work">
-                <video width="320" height="240" controls>
-                    <!-- Provide the path to your video file -->
-                    <source src="images/tetris.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <div class="layer">
-                    <h3>Tetris</h3>
-                    <p>This game was made with Java, with Dynamic Arrays being the main data structure used, coupled with complicated algorithms such as vertical flips, rotating, and clearing layers off the board.</p>
-                </div>
-                <video width="320" height="240" controls>
-                    <!-- Provide the path to your video file -->
-                    <source src="images/cache.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <div class="layer">
-                    <h3>Cache Simulator</h3>
-                    <p>This cache simulator utilizes linked lists and hashmaps as the main data structures, alongside a sorted array method to properly follow the rules of ordering for the LFU cache.</p>
-                </div>
-
+        <header>
+            <h1>Austin Torres Lopez</h1>
+            <p class="subtitle">Backend & Systems Engineer</p>
+            <div class="links">
+                <a href="mailto:torreslopez.austin@gmail.com">Email</a>
+                <a href="https://github.com/AustinTorresLopez" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/austintorreslopez" target="_blank">LinkedIn</a>
             </div>
-        </div>
+        </header>
+
+        <section>
+            <h2>Professional Summary</h2>>
+            <p>
+                Software engineer with strong foundations in backend systems,
+                data structures, and database-driven applications.
+                Experience building full-stack and systems-level projects
+                using Java, Spring Boot, Python, and PostgreSQL.
+                Background includes geospatial data analysis at NASA and
+                infrastructure exposure through data center certification.
+                Seeking an entry-level backend, cloud, or systems engineering role.
+            </p>
+        </section>
+
+        <section>
+            <h2>Technical Skills</h2>
+            <ul class="skills">
+                <li><strong>Languages:</strong> Java, Python, C</li>
+                <li><strong>Frameworks:</strong> Spring Boot, Django, React</li>
+                <li><strong>Databases:</strong> PostgreSQL, SQLite</li>
+                <li><strong>Tools:</strong> Git, Linux, VS Code</li>
+                <li><strong>Concepts:</strong> Data Structures, Algorithms, REST APIs, Cache Design (LFU/LRU)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Selected Engineering Projects</h2>
+
+            <div class="project">
+                <h3>Soccer Player Database</h3>
+                <p>
+                    Python web scraper integrated with a Java Spring Boot API
+                    and PostgreSQL database for automated player data management.
+                </p>
+                <a href="https://github.com/AustinTorresLopez/Premier-League-Data-Scraper" target="_blank">
+                    View Repository
+                </a>
+            </div>
+
+            <div class="project">
+                <h3>Tetris Game (Java)</h3>
+
+                <video controls>
+                    <source src="images/tetris.mp4" type="video/mp4">
+                </video>
+
+                <p>
+                    Playable Tetris clone built in Java using dynamic arrays,
+                    custom board rotation logic, and scoring algorithms.
+                </p>
+            </div>
+
+            <div class="project">
+                <h3>LFU Cache Simulator</h3>
+                <video controls>
+                    <source src="images/cache.mp4" type="video/mp4">
+                </video>
+                <p>
+                    Implemented optimized LFU cache using hash maps and linked lists
+                    for efficient data retrieval.
+                </p>
+            </div>
+
+            <div class="project">
+                <h3>The Roomie</h3>
+                <p>
+                    Full-stack roommate management platform using Django, SQLite,
+                    and React.
+                </p>
+            </div>
+
+        </section>
+
+        <section>
+            <h2>Experience</h2>
+            <div class="project">
+                <h3>NASA – Aerospace Engineering Science Scholar</h3>
+                <p>
+                    Performed geospatial data analysis using GIS and remote sensing
+                    datasets to model migration patterns and optimize drone routes
+                    using large-scale spatial data.
+                </p>
+            </div>
+
+            <div class="project">
+                <h3>Vanguard Gym – Program & Operations Coordinator</h3>
+                <p>
+                    Managed scheduling systems and CRM tools, improving operational
+                    efficiency and reporting workflows in a high-growth environment.
+                </p>
+            </div>
+
+        </section>
+
+        <footer>
+            <p>© 2026 Austin Torres Lopez</p>
+        </footer>
     </div>
-</div>
-    <script>
-
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
-
-        function opentab(tabname){
-
-        for (var i = 0; i < tablinks.length; i++) {
-            tablinks[i].classList.remove("active-link");
-        }
-
-        for (var i = 0; i < tabcontents.length; i++) {
-            tabcontents[i].classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-    }
-    </script>
-
 </body>
-</html>
